@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jenn's JavaScript Events</title>
+    <script>
+        alert("Do I have your attention?")
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header><h1>Ya'll Wanna See My EVENTS?</h1></header>
+<body>
+
+<div>
+<h2>It's an EVENTAPOLOZA!</h2>
+<p id="hey">Look at me changing content</p>
+<button type="button" onclick="document.getElementById('hey').innerHTML = 'How you doing?' ">HEEEY</button>
+</div>
+
+<div>
+  <p id="bigger">Number One, Make it so.</p>
+    <button type="button" onclick="document.getElementById('bigger').style.fontSize = '40px'">Click Me</button>
+</div><br>
+
+<div id="alert">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTXGJn9CPg0M9kpwbs8PcI-Y5W9gJOyHg95TpdPQizgczeYh0y" alt="hoverboard" onmouseover="javasciprt:alert('On a rollover, Hover boards do not work on water')">
+</div>
+
+<div>
+    <script>
+        function bgChange(bg) {
+            document.body.style.background = bg;
+        }
+    </script>
+    <h2>I am ATTEMPTING to create a color change on the background..</h2>
+    <table style="width: 300px; height:100px;">
+        <tr>
+            <td onmouseover="bgChange(this.style.backgroundColor)"
+                onmouseout="bgChange('transparent')"
+                style="background-color: burlywood">
+            </td>
+            <td onmouseover="bgChange(this.style.backgroundColor)"
+                onmouseout="bgChange('transparent')"
+                style="background-color: cadetblue"></td>
+
+        </tr>
+    </table>
+
+</div>
+
+<div class="numba">
+    Whats ya numba? <input type="text" onfocus="myFunction(this)">
+
+    <script>
+        function myFunction(x) {
+            x.style.background = "green";
+
+        }
+    </script>
+</div>
+
+
+
+<script>
+    alert("I would say Goodbye, but, this loads before the page loads");
+</script>
+
+</body>
+</html>
